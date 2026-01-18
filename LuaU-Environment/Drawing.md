@@ -167,6 +167,16 @@ DrawingObject.Center: boolean
 DrawingObject.Font: Font -- (number/enum)
 ```
 
+Available Fonts:
+- `UI`: 0
+- `System`: 1
+- `SystemBold`: 2
+- `Monospace`: 3
+- `Minecraft`: 4
+- `Pixel`: 7
+- `Fortnite`: 8
+
+
 #### `Size` (FontSize)
 
 ```luau
