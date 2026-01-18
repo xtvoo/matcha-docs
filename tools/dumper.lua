@@ -25,7 +25,8 @@ local function dumpTable(tbl, name, indent)
 end
 
 append("=== Global Environment Dump ===")
-dumpTable(getgenv(), "getgenv()")
+local env = getgenv and getgenv() or getfenv and getfenv() or _G
+dumpTable(env, "Environment")
 
 if debug then
     append("\n=== debug Library ===")
@@ -55,7 +56,7 @@ local known_globals = {
 
 append("\n=== Specific Globals Check ===")
 for _, name in ipairs(known_globals) do
-    if getgenv()[name] then
+    if env[name] then
         append("[DOM] " .. name .. " exists")
     else
         append("[MISS] " .. name .. " NOT found")

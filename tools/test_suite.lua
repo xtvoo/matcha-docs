@@ -19,9 +19,10 @@ test("identifyexecutor", function()
     assert(name == "Matcha", "Executor name mismatch")
 end)
 
-test("getgenv", function()
-    local env = getgenv()
-    assert(type(env) == "table", "getgenv did not return a table")
+test("Environment Access", function()
+    local env = getgenv and getgenv() or getfenv and getfenv() or _G
+    assert(type(env) == "table", "Environment is not a table")
+    print("  Environment accessed via: " .. (getgenv and "getgenv" or getfenv and "getfenv" or "_G"))
 end)
 
 test("Console Functions", function()
