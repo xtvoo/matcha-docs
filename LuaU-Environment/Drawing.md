@@ -14,6 +14,9 @@ Drawing.new(drawingType: string): DrawingObject
 - `Circle`
 - `Text`
 - `Triangle`
+- `Quad`
+- `Image`
+
 
 ### Example Code
 

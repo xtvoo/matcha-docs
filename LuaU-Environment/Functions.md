@@ -95,4 +95,11 @@ function getgamename(): string
 Returns the name of the current game.
 
 
-Decodes a Base64 string back to a normal string.
+
+## `create_run_secure`
+
+```luau
+function create_run_secure(source: string): (() -> any)
+```
+
+Compiles and returns a secure execution closure for the given source string.
