@@ -1,5 +1,8 @@
 # Datatypes
 
+> [!WARNING]
+> The `CFrame` global is currently **nil** / unavailable in this environment. Use `Vector3` and properties like `Position` or `Rotation` directly where possible.
+
 ## Vector3
 
 [Roblox Documentation](https://create.roblox.com/docs/reference/engine/datatypes/Vector3)
