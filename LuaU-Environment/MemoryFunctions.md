@@ -11,3 +11,15 @@ Writes a value to a specific memory address.
 - `type`: The type of value to write (e.g., `"float"`, `"double"`, `"int"`).
 - `address`: The memory address to write to.
 - `value`: The value to write.
+
+## `memory_read`
+
+```luau
+function memory_read(type: string, address: number): any
+```
+
+Reads a value from a specific memory address.
+
+- `type`: The type of value to read (e.g., `"float"`, `"double"`, `"int"`).
+- `address`: The memory address to read from.
+

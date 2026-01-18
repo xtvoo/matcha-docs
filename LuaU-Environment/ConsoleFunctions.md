@@ -22,4 +22,21 @@ Prints a warning string to the console.
 function error(message: string)
 ```
 
+## `printl`
+
+```luau
+function printl(message: string)
+```
+
+Likely a "print line" or logged print function.
+
+## `errorl`
+
+```luau
+function errorl(message: string)
+```
+
+Likely a logged error function.
+
+
 Prints an error string to the console.

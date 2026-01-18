@@ -86,4 +86,13 @@ Encodes a string to Base64 format.
 function base64decode(data: string): string
 ```
 
+## `getgamename`
+
+```luau
+function getgamename(): string
+```
+
+Returns the name of the current game.
+
+
 Decodes a Base64 string back to a normal string.
