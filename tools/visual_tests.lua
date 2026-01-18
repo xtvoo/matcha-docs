@@ -13,10 +13,9 @@ end
 
 local function dump_props(obj, name)
     print("--- Dumping Props for " .. name .. " ---")
-    -- Try direct iteration if possible (unlikely for userdata)
-    for k, v in pairs(obj) do
-        print("  [Direct] " .. tostring(k) .. ": " .. tostring(v))
-    end
+    -- Userdata cannot be iterated with pairs usually
+    -- We skip direct iteration
+
     
     -- Try getmetatable
     local mt = getmetatable(obj)
