@@ -25,19 +25,12 @@ local function handleCharacter(char)
         
         while char and char.Parent and hum.Health > 0 do
             -- 1. Low Health Reset (Auto-Reset)
-            -- Increased threshold to 20 to catch it earlier
-            if hum.Health <= 20 and hum.Health > 0 then
-                print("[Anti-Stomp] Health low (" .. math.floor(hum.Health) .. "), forcing reset via memory!")
-                
-                -- Use the same memory write method as the keybind since that confirms working
-                if hum.Address then
-                     pcall(function() 
-                          memory_write("float", hum.Address + health_offset, -10)
-                     end)
-                end
-                
-                -- Fallback standard reset
-                hum.Health = 0
+            -- 1. Low Health Reset (Auto-Reset)
+            -- If health is low, glitch it to -10 immediately
+            if hum.Health <= 25 and hum.Health > 0 then
+                 pcall(function() 
+                      memory_write("float", hum.Address + health_offset, -10)
+                 end)
             end
 
             -- 2. Manual Anti-Stomp / Glitch Keybind
