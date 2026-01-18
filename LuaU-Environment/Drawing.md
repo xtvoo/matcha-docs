@@ -30,3 +30,177 @@ square.Transparency = 1 -- Assumed property from context of other drawing libs
 wait(5) 
 square:Remove()
 ```
+
+# DrawingObject
+
+## Methods
+
+### `Remove`
+
+```luau
+function DrawingObject:Remove(): nil
+```
+
+## Base Properties
+
+Shared set of properties across all `DrawingObject` types.
+
+#### `Color`
+
+```luau
+DrawingObject.Color: Color3
+```
+
+#### `Transparency`
+
+```luau
+DrawingObject.Transparency: number
+```
+
+#### `Visible`
+
+```luau
+DrawingObject.Visible: boolean
+```
+
+#### `Position`
+
+```luau
+DrawingObject.Position: Vector2
+```
+
+#### `ZIndex`
+
+```luau
+DrawingObject.ZIndex: number
+```
+
+## Square Properties
+
+#### `Size`
+
+```luau
+DrawingObject.Size: Vector2
+```
+
+#### `Filled`
+
+```luau
+DrawingObject.Filled: boolean
+```
+
+#### `Thickness`
+
+```luau
+DrawingObject.Thickness: number
+```
+
+## Line Properties
+
+#### `From`
+
+```luau
+DrawingObject.From: Vector2
+```
+
+#### `To`
+
+```luau
+DrawingObject.To: Vector2
+```
+
+#### `Thickness`
+
+```luau
+DrawingObject.Thickness: number
+```
+
+## Circle Properties
+
+#### `Radius`
+
+```luau
+DrawingObject.Radius: number
+```
+
+#### `NumSides`
+
+```luau
+DrawingObject.NumSides: number
+```
+
+#### `Thickness`
+
+```luau
+DrawingObject.Thickness: number
+```
+
+#### `Filled`
+
+```luau
+DrawingObject.Filled: boolean
+```
+
+## Text Properties
+
+#### `Text`
+
+```luau
+DrawingObject.Text: string
+```
+
+#### `Outline`
+
+```luau
+DrawingObject.Outline: boolean
+```
+
+#### `Center`
+
+```luau
+DrawingObject.Center: boolean
+```
+
+#### `Font`
+
+```luau
+DrawingObject.Font: Font -- (number/enum)
+```
+
+#### `Size` (FontSize)
+
+```luau
+DrawingObject.Size: number
+```
+
+## Triangle Properties
+
+#### `PointA`
+
+```luau
+DrawingObject.PointA: Vector2
+```
+
+#### `PointB`
+
+```luau
+DrawingObject.PointB: Vector2
+```
+
+#### `PointC`
+
+```luau
+DrawingObject.PointC: Vector2
+```
+
+#### `Filled`
+
+```luau
+DrawingObject.Filled: boolean
+```
+
+#### `Thickness`
+
+```luau
+DrawingObject.Thickness: number
+```

@@ -21,3 +21,21 @@ UserInputService.InputEnded:Connect(function(input: InputObject, gameProcessed: 
     -- code
 end)
 ```
+
+## MeshPart
+
+[Roblox Documentation](https://create.roblox.com/docs/reference/engine/classes/MeshPart)
+
+### Properties
+
+#### `TextureId`
+
+```luau
+MeshPart.TextureId: string
+```
+
+#### `MeshId`
+
+```luau
+MeshPart.MeshId: string
+```

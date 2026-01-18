@@ -12,6 +12,8 @@ To understand how the LuaVM works, you first need to understand the basics of Lu
 
 - [LuaU Environment](./LuaU-Environment)
     - [Functions](./LuaU-Environment/Functions.md)
+    - [Console Functions](./LuaU-Environment/ConsoleFunctions.md)
+    - [Input Functions](./LuaU-Environment/InputFunctions.md)
     - [Classes](./LuaU-Environment/Classes.md)
     - [Datatypes](./LuaU-Environment/Datatypes.md)
     - [Drawing](./LuaU-Environment/Drawing.md)
